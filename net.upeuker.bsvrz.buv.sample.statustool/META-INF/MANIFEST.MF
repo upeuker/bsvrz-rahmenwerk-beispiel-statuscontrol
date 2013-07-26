@@ -1,10 +1,14 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Statustool
-Bundle-SymbolicName: net.upeuker.bsvrz.buv.sample.statustool
+Bundle-Name: Beispiel für Statuszeilenelemente im Rahmenwerk 2.0
+Bundle-SymbolicName: net.upeuker.bsvrz.buv.sample.statustool;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: net.upeuker.bsvrz.buv.sample.statustool.internal.Activator
+Bundle-Activator: net.upeuker.bsvrz.buv.sample.statustool.SampleActivator
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ de.bsvrz.buv.rw.basislib;bundle-version="[2.0.0,3.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
+Import-Package: javax.annotation;version="1.0.0",
+ javax.inject;version="1.0.0"
+Bundle-Vendor: Uwe Peuker

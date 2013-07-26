@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="de.bsvrz.buv.rw.basislib.toolbarcontrol">
+      <control
+            class="net.upeuker.bsvrz.buv.sample.statustool.DavStatusControl"
+            id="net.upeuker.bsvrz.buv.sample.statustool.davstatus"
+            name="DavStatus">
+         <parameter
+               default="green"
+               name="farbe">
+         </parameter>
+         <parameter
+               default="whitesmoke"
+               name="hintergrund">
+         </parameter>
+      </control>
+   </extension>
+
+</plugin>
