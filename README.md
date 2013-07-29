@@ -16,5 +16,5 @@ enthält unter anderem den Sendepufferzustand der bei diesem Datenverteiler
 registrierten Applikationen. Aus dem Datensatz wird der entsprechende Wert
 für die aktuelle Rahmenwerksapplikation ermittelt und angezeigt.
  
-Der Prototyp und die Standparameter des Elements werden per Extension-Point
+Der Prototyp und die Standardparameter des Elements werden per Extension-Point
 zur Verfügung gestellt.
