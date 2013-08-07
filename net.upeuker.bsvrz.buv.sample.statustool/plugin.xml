@@ -9,10 +9,12 @@
             name="DavStatus">
          <parameter
                default="green"
+               id="farbe"
                name="farbe">
          </parameter>
          <parameter
                default="whitesmoke"
+               id="hintergrund"
                name="hintergrund">
          </parameter>
       </control>
