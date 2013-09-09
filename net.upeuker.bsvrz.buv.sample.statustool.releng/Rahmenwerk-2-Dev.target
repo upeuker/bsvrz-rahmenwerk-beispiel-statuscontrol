@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="Rahmenwerk-Dev" sequenceNumber="17">
+<?pde version="3.8"?><target name="Rahmenwerk-Dev" sequenceNumber="18">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.nebula.feature.feature.group" version="1.0.0.201307092147"/>
@@ -11,24 +11,26 @@
 <repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="de.bsvrz.buv.rw.rw.core.feature.source.feature.group" version="2.0.0.201308141403"/>
-<unit id="de.bsvrz.buv.rw.rw.core.feature.feature.group" version="2.0.0.201308141403"/>
-<unit id="de.bsvrz.buv.rw.rw.berechtigungen.feature.feature.group" version="1.0.0.201308141403"/>
-<unit id="de.bsvrz.buv.rw.rw.einstellungen.feature.feature.group" version="1.0.0.201308141403"/>
-<unit id="de.bsvrz.buv.rw.rw.berechtigungen.feature.source.feature.group" version="1.0.0.201308141403"/>
-<unit id="de.bsvrz.buv.rw.rw.einstellungen.feature.source.feature.group" version="1.0.0.201308141403"/>
-<repository location="http://www.bitctrl.de/projekte/rw2.0/updatesite/"/>
+<unit id="de.bsvrz.buv.vew.feature.source.feature.group" version="1.0.0.201308151224"/>
+<unit id="de.bsvrz.puk.param.lib.feature.feature.group" version="2.1.2.201308151224"/>
+<unit id="de.bsvrz.sys.funclib.dynobj.feature.feature.group" version="1.0.3.201308151224"/>
+<unit id="de.bsvrz.buv.vew.feature.feature.group" version="1.0.0.201308151224"/>
+<unit id="de.bsvrz.buv.daf.feature.source.feature.group" version="3.5.0.201308151224"/>
+<unit id="de.bsvrz.buv.daf.feature.feature.group" version="3.5.0.201308151224"/>
+<unit id="de.bsvrz.sys.funclib.dynobj.feature.source.feature.group" version="1.0.3.201308151224"/>
+<unit id="de.bsvrz.puk.param.lib.feature.source.feature.group" version="2.1.2.201308151224"/>
+<repository location="http://www.bitctrl.de/projekte/kernsoftware"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="de.bsvrz.buv.vew.feature.source.feature.group" version="1.0.0.201308141350"/>
-<unit id="de.bsvrz.puk.param.lib.feature.feature.group" version="2.1.2.201308141350"/>
-<unit id="de.bsvrz.sys.funclib.dynobj.feature.feature.group" version="1.0.3.201308141350"/>
-<unit id="de.bsvrz.buv.vew.feature.feature.group" version="1.0.0.201308141350"/>
-<unit id="de.bsvrz.buv.daf.feature.source.feature.group" version="3.5.0.201308141350"/>
-<unit id="de.bsvrz.buv.daf.feature.feature.group" version="3.5.0.201308141350"/>
-<unit id="de.bsvrz.sys.funclib.dynobj.feature.source.feature.group" version="1.0.3.201308141350"/>
-<unit id="de.bsvrz.puk.param.lib.feature.source.feature.group" version="2.1.2.201308141350"/>
-<repository location="http://www.bitctrl.de/projekte/kernsoftware"/>
+<unit id="de.bsvrz.buv.rw.migrationsupport.feature.feature.group" version="1.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.rw.berechtigungen.feature.source.feature.group" version="1.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.rw.einstellungen.feature.source.feature.group" version="1.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.rw.core.feature.source.feature.group" version="2.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.rw.berechtigungen.feature.feature.group" version="1.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.rw.core.feature.feature.group" version="2.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.rw.einstellungen.feature.feature.group" version="1.0.0.201309061351"/>
+<unit id="de.bsvrz.buv.rw.migrationsupport.feature.source.feature.group" version="1.0.0.201309061351"/>
+<repository location="http://www.bitctrl.de/projekte/rw2.0/updatesite/"/>
 </location>
 </locations>
 </target>
