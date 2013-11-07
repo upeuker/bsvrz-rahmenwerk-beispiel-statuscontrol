@@ -6,13 +6,13 @@
 <repository location="http://download.eclipse.org/technology/nebula/snapshot"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.rcp.sdk.id" version="4.3.0.I20130605-2000"/>
-<unit id="org.eclipse.rcp.feature.group" version="4.3.0.v20130605-2000"/>
+<unit id="org.eclipse.rcp.sdk.id" version="4.3.1.M20130911-1000"/>
+<unit id="org.eclipse.rcp.feature.group" version="4.3.1.v20130911-1000"/>
 <repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="de.bsvrz.buv.daf.feature.feature.group" version="3.5.0.201308151224"/>
-<unit id="de.bsvrz.buv.vew.feature.feature.group" version="1.0.0.201308151224"/>
+<unit id="de.bsvrz.buv.daf.feature.feature.group" version="3.5.0.201311071145"/>
+<unit id="de.bsvrz.buv.vew.feature.feature.group" version="1.0.0.201311071145"/>
 <repository location="http://www.bitctrl.de/projekte/kernsoftware"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
