@@ -23,10 +23,10 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="de.bsvrz.sys.funclib.dynobj.feature.feature.group" version="1.0.3.201310252052"/>
-<unit id="de.bsvrz.buv.plugin.selektion.feature.feature.group" version="2.0.0.201311132151"/>
-<unit id="de.bsvrz.sys.funclib.bitctrl.feature.feature.group" version="3.0.0.201311132151"/>
+<unit id="de.bsvrz.buv.plugin.selektion.feature.feature.group" version="2.0.0.201311142351"/>
+<unit id="de.bsvrz.sys.funclib.bitctrl.feature.feature.group" version="3.0.0.201311142351"/>
 <unit id="de.bsvrz.puk.param.lib.feature.feature.group" version="2.1.2.201310252052"/>
-<unit id="de.bsvrz.buv.rw.bitctrl.feature.feature.group" version="2.0.0.201311132151"/>
+<unit id="de.bsvrz.buv.rw.bitctrl.feature.feature.group" version="2.0.0.201311142351"/>
 <repository location="http://www.bitctrl.de/projekte/lose_rw2.0/updatesite/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
