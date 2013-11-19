@@ -77,8 +77,8 @@ public class DavStatusControl extends AbstractRwMenuControl {
 		private String value = "init";
 
 		public DataReceiver(final ClientDavInterface dav) {
+			this.dav = dav;
 			if (dav != null) {
-				this.dav = dav;
 				final DataModel dataModel = dav.getDataModel();
 				final AttributeGroup atg = dataModel
 						.getAttributeGroup("atg.angemeldeteApplikationen");
@@ -186,7 +186,7 @@ public class DavStatusControl extends AbstractRwMenuControl {
 	private DataReceiver dataReceiver;
 
 	@Override
-	public void fill(final Composite parent) {
+	public final void fill(final Composite parent) {
 
 		if (anzeigeText == null) {
 			anzeigeText = new CLabel(parent, SWT.SHADOW_NONE | SWT.BORDER);
@@ -237,14 +237,14 @@ public class DavStatusControl extends AbstractRwMenuControl {
 		}
 	}
 
-	public void deregisterReceiver() {
+	public final void deregisterReceiver() {
 		if (dataReceiver != null) {
 			dataReceiver.disconnect();
 		}
 		dataReceiver = null;
 	}
 
-	public void registerReceiver(final ClientDavInterface dav) {
+	public final void registerReceiver(final ClientDavInterface dav) {
 		deregisterReceiver();
 		dataReceiver = new DataReceiver(dav);
 	}
@@ -260,7 +260,7 @@ public class DavStatusControl extends AbstractRwMenuControl {
 			return;
 		}
 
-		new UIJob("Aktualisiere Status") {
+		UIJob uiJob = new UIJob("Aktualisiere Status") {
 
 			@Override
 			public IStatus runInUIThread(final IProgressMonitor monitor) {
@@ -286,7 +286,8 @@ public class DavStatusControl extends AbstractRwMenuControl {
 				return Rahmenwerk.JOB_FAMILY.equals(family)
 						|| super.belongsTo(family);
 			}
-		}.schedule();
+		};
+		uiJob.schedule();
 	}
 
 	private String getCurrentText() {
@@ -298,7 +299,7 @@ public class DavStatusControl extends AbstractRwMenuControl {
 	}
 
 	@Override
-	public void setParameter(final Map<String, String> parameters) {
+	public final void setParameter(final Map<String, String> parameters) {
 		for (final Entry<String, String> parameter : parameters.entrySet()) {
 			if (DavStatusControl.PARAM_FARBE.equals(parameter.getKey())) {
 				foreGround = parameter.getValue();
@@ -310,7 +311,7 @@ public class DavStatusControl extends AbstractRwMenuControl {
 	}
 
 	@Override
-	public boolean useInStatusLine() {
+	public final boolean useInStatusLine() {
 		return true;
 	}
 }
