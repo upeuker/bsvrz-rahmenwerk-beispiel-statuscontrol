@@ -28,19 +28,8 @@ public class SampleActivator extends AbstractUIPlugin {
 	/** die globale Plugin-Instanz. */
 	private static SampleActivator plugin;
 
-	/** der Service zum Zugriff auf die Funktionalitäten des Rahmenwerks. */
-	private Rahmenwerk rahmenwerk;
-
 	/**
-	 * Der Rahmenwerk-Service wird beim Aktivieren des Bundles über den
-	 * Servicekontext des Plugins ermittelt. Das ist eine Möglichkeit den
-	 * Zugriff auf den Rahmenwerk-OSGI-Service zu erhalten. Zu Beachten ist
-	 * dabei, das der Service auf diesem Weg erst nach der Aktivierung zur
-	 * Verfügung steht, d.h. Konstruktoren die von außen aufgerufen werden
-	 * können (wie bspw. Extension-Point-Instanzen) können unter Umständen noch
-	 * nicht darauf zugreifen.
-	 * 
-	 * Alternativ könnte eine OSGI-Komponente installiert werden, die den
+	 * Der Rahmenwerk-Service wird über eine OSGI-Komponente bereitgestellt, die den
 	 * Service zum Zeitpunkt der Aktivierung des OSGI-Frameworks übergeben
 	 * bekommt und diesen bereitstellen könnte. Eine weitere Möglichkeit wäre
 	 * die Bereitstellung des erforderlichen Services über DI.
@@ -56,8 +45,6 @@ public class SampleActivator extends AbstractUIPlugin {
 	public final void start(final BundleContext context) throws Exception {
 		super.start(context);
 		SampleActivator.plugin = this;
-		rahmenwerk = EclipseContextFactory.getServiceContext(context).get(
-				Rahmenwerk.class);
 	}
 
 	@Override
@@ -74,15 +61,5 @@ public class SampleActivator extends AbstractUIPlugin {
 	 */
 	public static SampleActivator getPlugin() {
 		return SampleActivator.plugin;
-	}
-
-	/**
-	 * liefert den aus dem Bundle-Kontext ermittelten Rahmenwerk-Service.
-	 * 
-	 * @return den Service oder <code>null</code>, wenn keiner ermittelt werden
-	 *         konnte
-	 */
-	public final Rahmenwerk getRahmenwerk() {
-		return rahmenwerk;
 	}
 }

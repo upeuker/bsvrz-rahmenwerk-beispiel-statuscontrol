@@ -214,9 +214,7 @@ public class DavStatusControl extends AbstractRwMenuControl {
 					deregisterReceiver();
 					anzeigeText = null;
 					if (verbindungsListener != null) {
-						SampleActivator
-								.getPlugin()
-								.getRahmenwerk()
+						RahmenwerkService.getService().getRahmenWerk()
 								.removeDavVerbindungsListener(
 										verbindungsListener);
 					}
@@ -226,10 +224,10 @@ public class DavStatusControl extends AbstractRwMenuControl {
 			});
 
 			verbindungsListener = new VerbindungsListener();
-			SampleActivator.getPlugin().getRahmenwerk()
+			RahmenwerkService.getService().getRahmenWerk()
 					.addDavVerbindungsListener(verbindungsListener);
-			if (SampleActivator.getPlugin().getRahmenwerk().isOnline()) {
-				registerReceiver(SampleActivator.getPlugin().getRahmenwerk()
+			if (RahmenwerkService.getService().getRahmenWerk().isOnline()) {
+				registerReceiver(RahmenwerkService.getService().getRahmenWerk()
 						.getDavVerbindung());
 			}
 
